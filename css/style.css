@@ -42,16 +42,6 @@ body{
   /*Req 1*/
 }
 
-#bg{
-
-  /* Full height */
-  height: 100%;
-
-  /*Center and scale the image nicely*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 h1{
   color: #c12258;
@@ -156,16 +146,19 @@ tbody tr:last-child td:last-child{
 /*Req 8*/
 footer{
   width:100%;
-  bottom: 0;
   min-height: 75px;
   background:#000000;
   text-align:center;
   vertical-align: middle;
-  color: #FFFFFF;
-  position: sticky;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 footer p{
+  color: #FFFFFF;
+  line-height: 1em;
   vertical-align: middle;
 }
 
