@@ -83,8 +83,8 @@ a{
 /*Req 6a*/
 td{
   text-align: center;
-  border-top: 2px;
-  border-width: 2px;
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
   border-color: black;
   padding: 10px;
 }
@@ -100,7 +100,9 @@ td{
 }
 /*Req 6c*/
 .rowhead{
-  border: 2px solid black;
+  border-width: 2px 2px 0px 0px;
+  border-style: solid; 
+  border-color: black;
 }
 
 /*Req 6d*/
@@ -121,13 +123,29 @@ tr:hover{
 /*Req 7*/
 table{
   border: 2px solid #000000;
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  border-spacing: 0px;
 }
 
 thead tr:first-child th:first-child{
-
+  border-radius: 10px 0px 0px 0px;
 }
+
+thead tr:first-child th:last-child{
+  border-radius: 0px 10px 0px 0px;
+}
+
+tbody tr:last-child th:first-child{
+  border-radius: 0px 0px 0px 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-radius: 0px 0px 10px 0px;
+}
+
+
 
 /*Add selectors and rules here*/
 
@@ -139,7 +157,13 @@ footer{
   height: 75px;
   background:#000000;
   text-align:center;
+  vertical-align: middle;
   color: #FFFFFF;
   position: sticky;
 }
+
+footer p{
+  vertical-align: middle;
+}
+
 
